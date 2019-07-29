@@ -6,7 +6,7 @@
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <link rel="stylesheet" href="css/default.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;amp;subset=cyrillic-ext,latin-ext" rel="stylesheet">
-    <title>ЛКМ - список заявок</title>
+    <title>ЛКМ - список проектов</title>
 </head>
 
 <body>
@@ -26,130 +26,104 @@
     <div class="main">
         <div class="main-header">
             <div class="main-inner">
-                <div class="main-header-button button">Создать заявку</div>
-                <div class="main-header-title">Заявки<span>34</span></div>
+                <div class="main-header-text user-header-text">
+                    <div class="fix"><span>ООО «Ромашка» </span><a class="icon icon-edit" href="#"></a></div>
+                </div>
+                <div class="l-clr"></div>
+            </div>
+            <div class="main-header-separator"> </div>
+            <div class="main-inner">
+                <div class="menu-right"> <a class="active menu-link" href="lkm-projects.html">
+                        <div class="events user-events"><span>2</span></div><span>проекты</span>
+                    </a></div>
+                <div class="submenu-wrapper">
+                    <ul class="submenu l-horizontal">
+                        <li><a href="lkm-user.html">Профиль</a></li>
+                        <li><a href="lkm-departments.html">Филиалы</a></li>
+                        <li><a href="lkm-managers.html">Менеджеры</a></li>
+                        <li><a href="lkm-workers.html">Замерщики</a></li>
+                        <li><a href="lkm-groups.html">Бригады</a></li>
+                        <li><a href="#">Прайс-лист</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="main-inner">
             <div class="main-fullwidth">
-                <div class="filter-block white-rounded is-open">
-                    <div class="filter-block-header">
-                        <div class="filter-block-header-title icon-arrow-white-blue js-filter-block-toggle">Фильтр заявок</div>
-                    </div>
+                <div class="filter-block white-rounded is-open projects-filer-block">
                     <div class="filter-block-body">
                         <form action="" method="post">
-                            <div class="filter-cols l-grid">
-                                <div class="filter-cols-left">
-                                    <ul class="filter-list">
-                                        <li><input type="checkbox" id="filter-select0"><label for="filter-select0">Все</label></li>
-                                        <li><input type="checkbox" id="filter-select1"><label for="filter-select1">Не обработана</label></li>
-                                        <li><input type="checkbox" id="filter-select2"><label for="filter-select2">Выезд на замер</label></li>
-                                        <li><input type="checkbox" id="filter-select3"><label for="filter-select3">Компред</label></li>
-                                        <li><input type="checkbox" id="filter-select4"><label for="filter-select4">Ожидание</label></li>
-                                        <li><input type="checkbox" id="filter-select5"><label for="filter-select5">Подписание договора</label></li>
-                                        <li><input type="checkbox" id="filter-select6"><label for="filter-select6">Выполнение работ</label></li>
-                                        <li><input type="checkbox" id="filter-select7"><label for="filter-select7">Завершено</label></li>
-                                    </ul><input class="button filter-button js-moveable-filter-button" type="submit" value="Отфильтровать">
-                                </div>
-                                <div class="filter-cols-right">
+                            <div class="l-table projects-filter l-w100">
+                                <div class="projects-filter-dates">
                                     <div class="form-wrapper">
-                                        <ul class="form-list l-grid l-grid-phone">
-                                            <li class="l-w100"><input type="text" placeholder="Ключевое слово"></li>
+                                        <ul class="form-list l-horizontal projects-date">
                                             <li class="date-from"><input class="hasLabel" type="text" placeholder="ДД.ММ.ГГГГ"><label class="note">Дата создания с</label></li>
                                             <li class="date-to"><input class="hasLabel" type="text" placeholder="ДД.ММ.ГГГГ"><label class="note">по</label></li>
-                                            <li class="fix-block"></li>
-                                            <li class="date-from date-from-end"><input class="hasLabel" type="text" placeholder="ДД.ММ.ГГГГ"><label class="note">Дата завершения с</label></li>
-                                            <li class="date-to"><input class="hasLabel" type="text" placeholder="ДД.ММ.ГГГГ"><label class="note">по</label></li>
-                                            <li class="fix-block"></li>
-                                            <li class="l-w50"><select name="city">
-                                                    <option selected="selected">Москва</option>
-                                                    <option>Санкт-Петербург</option>
-                                                </select><label class="note">Город</label></li>
-                                            <li class="l-w50"><select name="object">
-                                                    <option selected="selected">Любой</option>
-                                                    <option>Объект1</option>
-                                                </select><label class="note">Тип помещения</label></li>
                                         </ul>
                                     </div>
                                 </div>
+                                <div class="dep-select-cell"><select name="dep">
+                                        <option selected="selected">Любой</option>
+                                        <option>Санкт-Петербург</option>
+                                    </select><label class="note">Филиал</label></div>
+                                <div><input class="button filter-button filter-button-projects" type="submit" value="Отфильтровать"></div>
                             </div>
                         </form>
                     </div>
                 </div>
-                <div class="requests">
-                    <div class="requests-header"> Всего найдено 293 заявок<a class="icon icon-settings filter-settings" href="#"></a></div>
+                <div class="requests projects">
                     <div class="table-wrapper">
                         <div class="requests-list l-table-with-rows">
                             <div class="requests-list-header">
                                 <div><a class="table-sort" href="#"> <span class="sort">Город</span><span class="sort-arrow sort-asc"></span><span class="sort-arrow sort-desc"></span></a></div>
-                                <div> <a class="table-sort" href="#"><span class="sort">Дата</span><span class="sort-arrow sort-asc"></span><span class="sort-arrow sort-desc is-active"></span></a></div>
                                 <div><a class="table-sort" href="#"> <span class="sort">Заявка</span><span class="sort-arrow sort-asc"></span><span class="sort-arrow sort-desc"></span></a></div>
-                                <div><a class="table-sort" href="#"><span class="sort">Статус</span><span class="sort-arrow sort-asc"></span><span class="sort-arrow sort-desc"></span></a></div>
+                                <div><a class="table-sort" href="#"><span class="sort">Ответственные</span><span class="sort-arrow sort-asc is-active"></span><span class="sort-arrow sort-desc"></span></a></div>
                             </div>
                             <div class="requests-list-item">
                                 <div class="requests-list-item-city">Ростов-на-Дону</div>
-                                <div class="requests-list-item-date"> 22.06.18 <span>02:12</span></div>
-                                <div class="requests-list-item-name"><a class="requests-list-item-name__value" href="">Ш-134 / Форма "Расчет стоимости (шумовнет.рф)</a>
-                                    <div class="requests-list-item-type">Квартира</div>
+                                <div class="requests-list-item-name"><a class="requests-list-item-name__value" href="">№12345 от 12 мая 2018 года</a>
+                                    <div class="requests-list-item-type">Статус: новая</div>
                                 </div>
-                                <div class="requests-list-item-status">Не обработана</div>
+                                <div class="team-cell">
+                                    <div>Менеджер: <a href="#">Михеева Анна Александровна</a></div>
+                                    <div>Замерщик: -</div>
+                                    <div>Бригада: -</div>
+                                </div>
                             </div>
                             <div class="requests-list-item">
                                 <div class="requests-list-item-city">Ростов-на-Дону</div>
-                                <div class="requests-list-item-date"> 22.06.18 <span>02:12</span></div>
-                                <div class="requests-list-item-name"><a class="requests-list-item-name__value" href="">Ш-134 / Форма "Расчет стоимости (шумовнет.рф)</a>
-                                    <div class="requests-list-item-type">Квартира</div>
+                                <div class="requests-list-item-name"><a class="requests-list-item-name__value" href="">№12345 от 12 мая 2018 года</a>
+                                    <div class="requests-list-item-type">Статус: новая</div>
                                 </div>
-                                <div class="requests-list-item-status">Не обработана</div>
+                                <div class="team-cell">
+                                    <div>Менеджер: <a href="#">Михеева Анна Александровна</a></div>
+                                    <div>Замерщик: -</div>
+                                    <div>Бригада: -</div>
+                                </div>
                             </div>
                             <div class="requests-list-item">
                                 <div class="requests-list-item-city">Ростов-на-Дону</div>
-                                <div class="requests-list-item-date"> 22.06.18 <span>02:12</span></div>
-                                <div class="requests-list-item-name"><a class="requests-list-item-name__value" href="">Ш-134 / Форма "Расчет стоимости (шумовнет.рф)</a>
-                                    <div class="requests-list-item-type">Квартира</div>
+                                <div class="requests-list-item-name"><a class="requests-list-item-name__value" href="">№12345 от 12 мая 2018 года</a>
+                                    <div class="requests-list-item-type">Статус: новая</div>
                                 </div>
-                                <div class="requests-list-item-status">Не обработана</div>
+                                <div class="team-cell">
+                                    <div>Менеджер: <a href="#">Михеева Анна Александровна</a></div>
+                                    <div>Замерщик: -</div>
+                                    <div>Бригада: -</div>
+                                </div>
                             </div>
                             <div class="requests-list-item">
                                 <div class="requests-list-item-city">Ростов-на-Дону</div>
-                                <div class="requests-list-item-date"> 22.06.18 <span>02:12</span></div>
-                                <div class="requests-list-item-name"><a class="requests-list-item-name__value" href="">Ш-134 / Форма "Расчет стоимости (шумовнет.рф)</a>
-                                    <div class="requests-list-item-type">Квартира</div>
+                                <div class="requests-list-item-name"><a class="requests-list-item-name__value" href="">№12345 от 12 мая 2018 года</a>
+                                    <div class="requests-list-item-type">Статус: новая</div>
                                 </div>
-                                <div class="requests-list-item-status">Не обработана</div>
-                            </div>
-                            <div class="requests-list-item">
-                                <div class="requests-list-item-city">Ростов-на-Дону</div>
-                                <div class="requests-list-item-date"> 22.06.18 <span>02:12</span></div>
-                                <div class="requests-list-item-name"><a class="requests-list-item-name__value" href="">Ш-134 / Форма "Расчет стоимости (шумовнет.рф)</a>
-                                    <div class="requests-list-item-type">Квартира</div>
+                                <div class="team-cell">
+                                    <div>Менеджер: <a href="#">Михеева Анна Александровна</a></div>
+                                    <div>Замерщик: -</div>
+                                    <div>Бригада: -</div>
                                 </div>
-                                <div class="requests-list-item-status">Не обработана</div>
-                            </div>
-                            <div class="requests-list-item">
-                                <div class="requests-list-item-city">Ростов-на-Дону</div>
-                                <div class="requests-list-item-date"> 22.06.18 <span>02:12</span></div>
-                                <div class="requests-list-item-name"><a class="requests-list-item-name__value" href="">Ш-134 / Форма "Расчет стоимости (шумовнет.рф)</a>
-                                    <div class="requests-list-item-type">Квартира</div>
-                                </div>
-                                <div class="requests-list-item-status">Не обработана</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="pagination">
-                        <div class="pagination-block">
-                            <ul class="pagination-list l-horizontal white-rounded">
-                                <li> <span>1</span></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li><a href="#">6</a></li>
-                                <li><a href="#">7</a></li>
-                                <li><a href="#">...</a></li>
-                                <li><a href="#">288</a></li>
-                            </ul>
-                        </div><a class="pagination-button button" href="#">Показать еще</a>
                     </div>
                 </div>
             </div>

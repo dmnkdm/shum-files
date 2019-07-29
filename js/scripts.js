@@ -5,6 +5,9 @@
         var TABLET = 768;
         var PHONE = 320;
         
+        
+        $('.custom-scroll').mCustomScrollbar();
+        $('.agreement-text').mCustomScrollbar();
               /*Ширина окна*/
 
         function getWidth() {
