@@ -6,72 +6,101 @@
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <link rel="stylesheet" href="css/default.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;amp;subset=cyrillic-ext,latin-ext" rel="stylesheet">
-    <title>ЛКК - Первый вход</title>
+    <title>ЛКК - Список заявок</title>
 </head>
 
 <body>
     <div class="side"><a class="menu-toggle icon icon-burger js-menu-show phone-show" href="#"></a><a class="icon icon-switcher side-switcher js-switcher" href="#"></a><a class="logo" href="index.html"><img src="images/logo.svg" alt=""></a>
-        <div class="l-clr"></div>
+        <div class="l-clr"></div><a class="icon icon-mail side-mail" href="#"> <span>20</span></a>
         <div class="side-user"><a href="#"><img class="side-user__img" src="images/avatar.svg" alt=""></a>
             <div class="side-user__name">Михаил Потушинский</div>
         </div>
+        <div class="side-dots"> <a class="icon icon-dots js-show-dotsblock" href="#"></a>
+            <div class="dots-block">
+                <ul class="dots-list">
+                    <li><a href="#">Профиль</a></li>
+                    <li><a href="#">Помощь</a></li>
+                    <li><a href="#">Выход из кабинета</a></li>
+                </ul>
+            </div>
+        </div>
+        <ul class="menu">
+            <li class="active"><a class="icon icon-inbox" href="lkk-list.html">Заявки<span>34</span></a></li>
+            <li><a class="icon icon-user" href="lkk-profile.html">Профиль</a></li>
+            <li><a class="icon icon-help" href="#">Помощь</a></li>
+        </ul>
     </div>
     <div class="main">
-        <div class="main-header main-header-lkk">
+        <div class="main-header main-header-lkk2">
             <div class="main-inner">
-                <div class="main-header-top">
-                    <div class="main-header-top-list first">
-                        <div class="main-header-top-list-select"></div>
-                        <div class="main-header-top-list-address">
-                            <div class="icon icon-address top-address-block"><span>Ваш город:</span><a class="icon-address-link arrow-after" href="#"><span>Москва</span></a></div>
-                        </div>
-                        <div class="main-header-top-list-phone">
-                            <div class="icon icon-phone top-phone-block">+7 (495) 120-55-86</div>
-                        </div>
-                        <div class="main-header-top-list-whatsapp">
-                            <div class="icon icon-whatsapp top-whatsapp-block">+7 (926) 705-95-20</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="main-header-bottom-wrap">
-                <div class="main-inner">
-                    <div class="main-header-bottom">
-                        <div class="main-header-bottom-title">Здравствуйте, Михаил</div>
-                    </div>
+                <div class="main-header-bottom main-header-bottom-withbutton">
+                    <div class="main-header-bottom-title">Мои заявки и договоры<span class="title-count">34</span></div>
+                    <div class="main-header-bottom-button-block"><a class="lkk-header-button main-header-button button" href="#">Оформить новую заявку</a></div>
                 </div>
             </div>
         </div>
-        <div class="main-cols main-inner">
-            <div class="first-enter-block white-rounded phone-full">
-                <div class="first-enter-block__text">Это Ваш первый вход в личный кабинет. Чтобы получить доступ к функционалу личного кабинета, пожалуйста, внимательно ознакомьтесь с пользовательским соглашением и подтвердите свое согласие с его условиями. Для подтверждения вам потребуется указать код из SMS-сообщения.</div>
-            </div>
-            <div class="white-rounded first-enter-agreement phone-full">
-                <div class="subheader">Пользовательское соглашение </div>
-                <div class="agreement-text">
-                    <div class="agreement-text-inner">
-                        <p>Расслоение представляет собой поток. Резонатор теоретически возможен. Разрыв противоречиво вращает ультрафиолетовый взрыв. В условиях электромагнитных помех, неизбежных при полевых измерениях, не всегда можно опредлить, когда именно объект тормозит осциллятор.</p>
-                        <p>В соответствии с принципом неопределенности, плазменное образование стабильно. Кристаллическая решетка конфокально отталкивает тахионный магнит. Примесь, на первый взгляд, теоретически возможна. Гравитирующая сфера, как бы это ни казалось парадоксальным, упруго возбуждает векторный гамма-квант. В ряде недавних экспериментов жидкость изотермично представляет собой плоскополяризованный гидродинамический удар.</p>
-                        <p>Расслоение представляет собой поток. Резонатор теоретически возможен. Разрыв противоречиво вращает ультрафиолетовый взрыв. В условиях электромагнитных помех, неизбежных при полевых измерениях, не всегда можно опредлить, когда именно объект тормозит осциллятор.</p>
-                        <p>В соответствии с принципом неопределенности, плазменное образование стабильно. Кристаллическая решетка конфокально отталкивает тахионный магнит. Примесь, на первый взгляд, теоретически возможна. Гравитирующая сфера, как бы это ни казалось парадоксальным, упруго возбуждает векторный гамма-квант. В ряде недавних экспериментов жидкость изотермично представляет собой плоскополяризованный гидродинамический удар.</p>
+        <div class="main-cols main-inner lkk-main-inner">
+            <div class="requests requests-lkk">
+                <div class="table-wrapper">
+                    <div class="requests-list l-table-with-rows">
+                        <div class="requests-list-header">
+                            <div class="date-th l-nowrap"> <a class="table-sort" href="#"><span class="sort">Дата</span><span class="sort-arrow sort-asc"></span><span class="sort-arrow sort-desc is-active"></span></a></div>
+                            <div><a class="table-sort" href="#"> <span class="sort">Заявка / договор</span><span class="sort-arrow sort-asc"></span><span class="sort-arrow sort-desc"></span></a></div>
+                            <div class="l-nowrap"><a class="table-sort" href="#"> <span class="sort">Сумма договора</span><span class="sort-arrow sort-asc"></span><span class="sort-arrow sort-desc"></span></a></div>
+                            <div><a class="table-sort" href="#"><span class="sort">Статус</span><span class="sort-arrow sort-asc"></span><span class="sort-arrow sort-desc"></span></a></div>
+                        </div>
+                        <div class="requests-list-item">
+                            <div class="requests-list-item-date">22.06.2019 </div>
+                            <div class="requests-list-item-name"><a class="requests-list-item-name__value" href="">Заявка Ш-134</a>
+                                <div class="requests-list-item-type requests-list-item-address">Москва, ул. Полярная д. 19 кв. 3</div>
+                            </div>
+                            <div class="requests-list-item-price">125 000 ₽</div>
+                            <div class="requests-list-item-status">Новая</div>
+                        </div>
+                        <div class="requests-list-item">
+                            <div class="requests-list-item-date">22.06.2019 </div>
+                            <div class="requests-list-item-name"><a class="requests-list-item-name__value" href="">Заявка Ш-134</a>
+                                <div class="requests-list-item-type requests-list-item-address">Москва, ул. Полярная д. 19 кв. 3</div>
+                            </div>
+                            <div class="requests-list-item-price">125 000 ₽</div>
+                            <div class="requests-list-item-status">Новая</div>
+                        </div>
+                        <div class="requests-list-item">
+                            <div class="requests-list-item-date">22.06.2019 </div>
+                            <div class="requests-list-item-name"><a class="requests-list-item-name__value" href="">Заявка Ш-134</a>
+                                <div class="requests-list-item-type requests-list-item-address">Москва, ул. Полярная д. 19 кв. 3</div>
+                            </div>
+                            <div class="requests-list-item-price">125 000 ₽</div>
+                            <div class="requests-list-item-status">Новая</div>
+                        </div>
+                        <div class="requests-list-item">
+                            <div class="requests-list-item-date">22.06.2019 </div>
+                            <div class="requests-list-item-name"><a class="requests-list-item-name__value" href="">Заявка Ш-134</a>
+                                <div class="requests-list-item-type requests-list-item-address">Москва, ул. Полярная д. 19 кв. 3</div>
+                            </div>
+                            <div class="requests-list-item-price">125 000 ₽</div>
+                            <div class="requests-list-item-status">Новая</div>
+                        </div>
+                        <div class="requests-list-item">
+                            <div class="requests-list-item-date">22.06.2019 </div>
+                            <div class="requests-list-item-name"><a class="requests-list-item-name__value" href="">Заявка Ш-134</a>
+                                <div class="requests-list-item-type requests-list-item-address">Москва, ул. Полярная д. 19 кв. 3</div>
+                            </div>
+                            <div class="requests-list-item-price">125 000 ₽</div>
+                            <div class="requests-list-item-status">Новая</div>
+                        </div>
+                        <div class="requests-list-item">
+                            <div class="requests-list-item-date">22.06.2019 </div>
+                            <div class="requests-list-item-name"><a class="requests-list-item-name__value" href="">Заявка Ш-134</a>
+                                <div class="requests-list-item-type requests-list-item-address">Москва, ул. Полярная д. 19 кв. 3</div>
+                            </div>
+                            <div class="requests-list-item-price">125 000 ₽</div>
+                            <div class="requests-list-item-status">Новая</div>
+                        </div>
                     </div>
                 </div>
-                <div class="sms-text"> На номер телефона +79876543210 отправлен SMS-код согласия. Если код не пришел, Вы можете <a class="dotted" href="#">запросить его повторно.</a></div>
-                <div class="sms-input-block"><input class="sms-input-block__input" type="text" name="sms" placeholder="SMS-код"><a class="button button-65" href="#">Согласиться с условиями</a></div>
-                <div class="manager-block">
-                    <div class="manager-block__img"><img src="images/data/manager.jpg" alt=""></div>
-                    <div class="manager-block-text">
-                        <div class="manager-block__header">Ваш персональный менеджер в компании Шумовнет:</div>
-                        <div class="manager-block__name">Ольга Оноприенко</div>
-                        <ul class="manager-block-contacts">
-                            <li>телефон (раб.): +7 (495) 123-45-67 (доб. 152) </li>
-                            <li>телефон (моб.): +7 (916) 123-45-67 </li>
-                            <li> skype: <a href="skype:shumovnet.olga">shumovnet.olga </a></li>
-                            <li>e-mail: <a href="mailto:Olga.Onoprienko@acoustic.ru">Olga.Onoprienko@acoustic.ru</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="help-note-text">По вопросам связанным с работой сайта, пожалуйста, обращайтесь в службу поддержки сервиса по телефону 8 (800) .... или отправьте свой вопрос по электронной почте. support@....</div>
+                <div class="pagination"><a class="pagination-button button" href="#">Показать еще</a></div>
+                <div class="requests-total-sum">Общая сумма по всем договорам: 1 200 923 ₽. Из них оплачено: 1 120 245 ₽</div>
             </div>
         </div>
     </div>

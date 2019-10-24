@@ -14,7 +14,16 @@
         <div class="l-clr"></div><a class="icon icon-mail side-mail" href="#"> <span>20</span></a>
         <div class="side-user"><a href="#"><img class="side-user__img" src="images/data/avatar.png" alt=""></a>
             <div class="side-user__name">Александр Константинов</div>
-        </div><a class="icon icon-dots side-dots" href="#"></a>
+        </div>
+        <div class="side-dots"> <a class="icon icon-dots js-show-dotsblock" href="#"></a>
+            <div class="dots-block">
+                <ul class="dots-list">
+                    <li><a href="#">Профиль</a></li>
+                    <li><a href="#">Помощь</a></li>
+                    <li><a href="#">Выход из кабинета</a></li>
+                </ul>
+            </div>
+        </div>
         <ul class="menu">
             <li class="active"><a class="icon icon-inbox" href="#">Заявки<span>34</span></a></li>
             <li><a class="icon icon-user" href="#">Исполнители</a></li>
@@ -82,10 +91,11 @@
                                             <li class="l-w50"><input class="phone-m" type="email" placeholder="Электронная почта" value="alexey@mail.ru"></li>
                                             <li class="l-w50"><input type="text" placeholder="Skype" value="Efpaty"></li>
                                             <li class="l-w50"><input class="phone-mask" type="tel" placeholder="Whatsapp" value="+7 (123) 456-78-90"></li>
-                                            <li class="form-list__header">Состав бригады<li class="l-w100"><textarea class="small-100">Михаил Иванович Шниперсон (1978 г. р., монтажник)
+                                            <li class="form-list__header">Состав бригады</li>
+                                            <li class="l-w100"><textarea class="small-100">Михаил Иванович Шниперсон (1978 г. р., монтажник)
 Сергей Данилович Вассерман (1977 г. р., плотник)
 Игорь Ларионович Мазепа (1979 г. р., сантехник)</textarea></li>
-                                            </li>
+                                            
                                             <li class="form-list__header">Компетенции</li>
                                             <li class="l-w100">
                                                 <ul class="filter-list l-grid l-2-col">
@@ -164,10 +174,11 @@
                                             <li class="l-w50"><input class="phone-m" type="email" placeholder="Электронная почта" value="alexey@mail.ru"></li>
                                             <li class="l-w50"><input type="text" placeholder="Skype" value="Efpaty"></li>
                                             <li class="l-w50"><input class="phone-mask" type="tel" placeholder="Whatsapp" value="+7 (123) 456-78-90"></li>
-                                            <li class="form-list__header">Состав бригады<li class="l-w100"><textarea class="small-100">Михаил Иванович Шниперсон (1978 г. р., монтажник)
+                                            <li class="form-list__header">Состав бригады </li>
+                                            <li class="l-w100"><textarea class="small-100">Михаил Иванович Шниперсон (1978 г. р., монтажник)
 Сергей Данилович Вассерман (1977 г. р., плотник)
 Игорь Ларионович Мазепа (1979 г. р., сантехник)</textarea></li>
-                                            </li>
+                                           
                                             <li class="form-list__header">Компетенции</li>
                                             <li class="l-w100">
                                                 <ul class="filter-list l-grid l-2-col">
@@ -246,10 +257,11 @@
                                             <li class="l-w50"><input class="phone-m" type="email" placeholder="Электронная почта" value="alexey@mail.ru"></li>
                                             <li class="l-w50"><input type="text" placeholder="Skype" value="Efpaty"></li>
                                             <li class="l-w50"><input class="phone-mask" type="tel" placeholder="Whatsapp" value="+7 (123) 456-78-90"></li>
-                                            <li class="form-list__header">Состав бригады<li class="l-w100"><textarea class="small-100">Михаил Иванович Шниперсон (1978 г. р., монтажник)
+                                            <li class="form-list__header">Состав бригады </li>
+                                            <li class="l-w100"><textarea class="small-100">Михаил Иванович Шниперсон (1978 г. р., монтажник)
 Сергей Данилович Вассерман (1977 г. р., плотник)
 Игорь Ларионович Мазепа (1979 г. р., сантехник)</textarea></li>
-                                            </li>
+                                           
                                             <li class="form-list__header">Компетенции</li>
                                             <li class="l-w100">
                                                 <ul class="filter-list l-grid l-2-col">
@@ -335,6 +347,27 @@
                                         <option>Леонид Бригадиров</option>
                                         <option>Леонид Бригадиров</option>
                                     </select><label class="note">Ответственный</label></li>
+                            </ul>
+                        </div><input class="button button-popup" type="submit" value="Добавить">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay overlay-add-payment">
+        <div class="l-flex">
+            <div class="popup">
+                <div class="popup-header"><a class="popup-close icon icon-cross js-popup-close" href="#"></a>
+                    <div class="popup-header__text">Добавление оплаты</div>
+                </div>
+                <div class="popup-body">
+                    <form action="post">
+                        <div class="form-wrapper">
+                            <ul class="form-list l-grid l-3-col">
+                                <li class="l-w44"><input type="text" name="price" placeholder="Сумма"></li>
+                                <li class="l-w28"><input class="hasLabel" type="text" name="date" placeholder="ДД:ММ:ГГГГ"><label class="note">Дата</label></li>
+                                <li class="l-w28"><input class="hasLabel" type="text" name="time" placeholder="ЧЧ:ММ"><label class="note">Время</label></li>
+                                <li class="l-w100"><textarea class="t-h100" name="description" placeholder="Примечание"></textarea></li>
                             </ul>
                         </div><input class="button button-popup" type="submit" value="Добавить">
                     </form>
